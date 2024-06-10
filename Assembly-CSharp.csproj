@@ -61,7 +61,6 @@
     <Compile Include="Assets\Scripts\Restart.cs" />
     <Compile Include="Assets\Scripts\rectangleSpawner.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
-    <Compile Include="Assets\MM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
