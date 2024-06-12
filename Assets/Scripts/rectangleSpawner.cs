@@ -38,11 +38,12 @@ public class rectangleSpawner : MonoBehaviour
 
         Vector3 spawnPos = new Vector3(10f, randomY,  0f);
         Instantiate(rect_prefabs, spawnPos, Quaternion.identity);
+
     }
 
     void checkplayerded()
     {
-        if(playerStatus.isDead == true)
+        if(playerStatus.isDead)
         {
             Destroy(gameObject);
         }

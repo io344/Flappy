@@ -6,6 +6,7 @@ public class Fly : MonoBehaviour
 { 
     public float flyForce = 5f;
     private Rigidbody2D rb;
+    public SoundManager sm;
     
     void Start()
     {
@@ -17,6 +18,7 @@ public class Fly : MonoBehaviour
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             flyCircle();
+            sm.PlaySound(0);
         }
     }
 

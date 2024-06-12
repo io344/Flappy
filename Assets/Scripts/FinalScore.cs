@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreUI : MonoBehaviour
+public class FinalScore : MonoBehaviour
 {
     public Text totalscrText;
     ScoreCounter scoreCounter;

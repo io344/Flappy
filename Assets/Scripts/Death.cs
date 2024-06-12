@@ -9,6 +9,9 @@ public class Death : MonoBehaviour
     public CircleCollider2D cc;
     public GameObject UIprefab; 
     public bool isDead;
+    public GameObject death_particle;
+    public Fly fly;
+    public SoundManager sm;
 
     void Start()
     {
@@ -28,7 +31,10 @@ public class Death : MonoBehaviour
     void killed()
     {
         isDead = true;
+        fly.enabled = false; // to stop the annoying sound!
         rb.bodyType = RigidbodyType2D.Static;
+        Instantiate(death_particle, transform.position, Quaternion.identity);
+        sm.PlaySound(1);
         sr.enabled = false;
         cc.enabled = false;
     }
