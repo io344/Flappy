@@ -11,10 +11,11 @@ public class MainMenu : MonoBehaviour
         audioSource.Play();
         StartCoroutine(LoadGameAfterSound(audioSource.clip.length));
     }
-    public void back2_mm()
+    
+    public void Quit()
     {
-        audioSource.Play();
-        StartCoroutine(LoadMMAfterSound(audioSource.clip.length));
+        Application.Quit();
+        Debug.Log("I Quit");
     }
 
     // for fuckin' sound to work 
@@ -22,10 +23,5 @@ public class MainMenu : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-    IEnumerator LoadMMAfterSound(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }

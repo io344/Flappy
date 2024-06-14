@@ -36,7 +36,7 @@ public class rectangleSpawner : MonoBehaviour
     void spawnRect() {
         float randomY = Random.Range(-1.5f, 1f); // bonak ni chatgpttt
 
-        Vector3 spawnPos = new Vector3(10f, randomY,  0f);
+        Vector3 spawnPos = new Vector3(12f, randomY,  0f);
         Instantiate(rect_prefabs, spawnPos, Quaternion.identity);
 
     }

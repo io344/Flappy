@@ -19,7 +19,7 @@ public class rectangleMovement : MonoBehaviour
         {
             transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
 
-            if (transform.position.x < -10f)
+            if (transform.position.x < -12f)
             {
                 Destroy(gameObject);
             }

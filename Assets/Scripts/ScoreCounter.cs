@@ -22,5 +22,9 @@ public class ScoreCounter : MonoBehaviour
     private void Update()
     {
         textScore.text = score.ToString();
+        if (playerStatus.isDead)
+        {
+            Destroy(gameObject);
+        }
     }
 }
