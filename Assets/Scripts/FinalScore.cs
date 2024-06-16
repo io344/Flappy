@@ -7,14 +7,11 @@ public class FinalScore : MonoBehaviour
 {
     public Text totalscrText;
     ScoreCounter scoreCounter;
-    int totalScore;
+    public int totalScore;
     void Start()
     {
         scoreCounter = FindObjectOfType<ScoreCounter>();
         totalScore = scoreCounter.score;
-    }
-    void Update()
-    {
         totalscrText.text = "SCORE: " + totalScore.ToString();
     }
 }

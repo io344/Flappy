@@ -7,11 +7,6 @@ public class ScoreCounter : MonoBehaviour
 {
     public int score = 0;
     public Text textScore;
-    Death playerStatus;
-    void Start()
-    {
-        playerStatus = FindObjectOfType<Death>(); 
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Score"))
@@ -22,9 +17,5 @@ public class ScoreCounter : MonoBehaviour
     private void Update()
     {
         textScore.text = score.ToString();
-        if (playerStatus.isDead)
-        {
-            Destroy(gameObject);
-        }
     }
 }
