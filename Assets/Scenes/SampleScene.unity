@@ -274,6 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rect_prefabs: {fileID: 4216261167767098022, guid: 0f1f0d37142546844a1d880fab76e3c3, type: 3}
   spawnIntervals: 4
+  rectSpawnPosY: 2
 --- !u!4 &481535386
 Transform:
   m_ObjectHideFlags: 0
@@ -1160,7 +1161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.7135439}
   m_AnchorMax: {x: 0.19250001, y: 0.90351194}
-  m_AnchoredPosition: {x: -0.0010986328, y: 1.3780518}
+  m_AnchoredPosition: {x: -0.0012207031, y: 1.3780518}
   m_SizeDelta: {x: -0.43879986, y: 12.487801}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1892497027

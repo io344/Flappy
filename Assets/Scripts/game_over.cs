@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class game_over : MonoBehaviour
 {
     public AudioSource audioSource;
+    public InterstitialAd interstitialAd;
     public void onRestartButtonClick()
     {
         audioSource.Play();
@@ -21,6 +22,8 @@ public class game_over : MonoBehaviour
     IEnumerator RestartDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
+        interstitialAd.LoadAd();
+        interstitialAd.ShowAd();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

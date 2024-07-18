@@ -24,7 +24,7 @@ public class HighScore : MonoBehaviour
         {
             PlayerPrefs.SetInt(title_score, score);
             PlayerPrefs.Save();
-            txtScore.text = "NEW BEST: " + score + " !!!";
+            txtScore.text = "NEW BEST !!!";
         }
     }
 

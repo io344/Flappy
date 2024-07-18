@@ -6,6 +6,7 @@ public class rectangleSpawner : MonoBehaviour
 {
     public GameObject rect_prefabs; // pwede pala folder bonak
     public float spawnIntervals = 2f;
+    public float rectSpawnPosY = 1.5f;
     float spawnTimer = 0f;
     Death playerStatus;
 
@@ -34,7 +35,7 @@ public class rectangleSpawner : MonoBehaviour
     }
 
     void spawnRect() {
-        float randomY = Random.Range(-1.5f, 1f); // bonak ni chatgpttt
+        float randomY = Random.Range(-rectSpawnPosY, rectSpawnPosY); // bonak ni chatgpttt
 
         Vector3 spawnPos = new Vector3(12f, randomY,  0f);
         Instantiate(rect_prefabs, spawnPos, Quaternion.identity);
